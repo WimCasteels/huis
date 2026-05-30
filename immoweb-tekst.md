@@ -20,7 +20,7 @@
 
 ## Beschrijving
 
-Op een toplocatie in het hart van Deurne Zuid, met de tuin grenzend aan het groene Boelaerpark, vindt u deze karaktervolle en lichtrijke gezinswoning. Ze combineert ruimte, comfort en authentieke charme met een zeldzaam stadse luxe: een eigen garage **én** een staanplaats voor de deur.
+Op een toplocatie in het hart van Deurne Zuid, met het groene Boelaerpark achter de hoek, vindt u deze karaktervolle en lichtrijke gezinswoning. Ze combineert ruimte, comfort en authentieke charme met een zeldzaam stadse luxe: een eigen garage **én** een staanplaats voor de deur.
 
 Binnen valt meteen het karakter op: sfeervolle, lichtrijke kamers, overvloedige bergruimte dankzij de vele ingemaakte kasten en een prachtig glas-in-loodraam — een creatie van glazenier Ivo Bakelants uit Deurne. Buiten geniet u van twee terrassen en een aangename, zuidwestgerichte stadstuin met twee vijgenbomen: een groene oase waar u 's namiddags en 's avonds van de zon geniet.
 
