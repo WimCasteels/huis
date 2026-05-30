@@ -1,0 +1,7 @@
+# Originele, niet-geoptimaliseerde foto's (~320 MB) — niet nodig voor de website.
+# Alleen de geoptimaliseerde versies in images/web/ worden gepubliceerd.
+images/*.jpg
+
+# OS / editor rommel
+.DS_Store
+Thumbs.db

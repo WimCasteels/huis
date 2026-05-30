@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Woning te koop – Deurne Zuid | Boelaerpark</title>
+  <meta name="description" content="Karaktervolle woning te koop in Deurne Zuid (Jozef Verbovenlei 109), met tuin aan het Boelaerpark, twee terrassen, garage en authentieke details. Richtprijs € 560.000." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #f5f0e8;
+      --dark: #1a1a14;
+      --green: #3b5c3a;
+      --green-light: #6b8f5e;
+      --gold: #b8953a;
+      --gold-light: #d4af6a;
+      --muted: #7a7a6a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--dark);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 4rem 3rem;
+      background:
+        linear-gradient(
+          160deg,
+          rgba(26,42,25,0.82) 0%,
+          rgba(42,66,40,0.62) 45%,
+          rgba(59,92,58,0.55) 75%,
+          rgba(20,30,18,0.85) 100%
+        ),
+        url('images/web/large/_DSF2801-Edit.jpg') center 35% / cover no-repeat;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(184,149,58,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(255,255,255,0.04) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      border: 1px solid rgba(184,149,58,0.5);
+      background: rgba(20,30,18,0.25);
+      padding: 0.4rem 1rem;
+      margin-bottom: 1.5rem;
+      align-self: flex-start;
+      animation: fadeUp 0.8s ease both;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 30px rgba(0,0,0,0.35);
+      animation: fadeUp 0.8s ease 0.15s both;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(245,240,232,0.85);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.6rem;
+      text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+      animation: fadeUp 0.8s ease 0.3s both;
+    }
+    .hero-address {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 2.5rem;
+      text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+      animation: fadeUp 0.8s ease 0.38s both;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      animation: fadeUp 0.8s ease 0.45s both;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.7);
+      margin-top: 0.25rem;
+    }
+    .stat-price .stat-num { color: var(--cream); }
+
+    .hero-contact {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2.25rem;
+      animation: fadeUp 0.8s ease 0.55s both;
+    }
+    .hero-contact .hc-text {
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      color: rgba(245,240,232,0.8);
+      text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+    }
+    .hero-contact .hc-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.4rem;
+      background: var(--gold);
+      color: var(--dark);
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .hero-contact .hc-btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    .hero-divider {
+      width: 1px;
+      background: rgba(245,240,232,0.2);
+      align-self: stretch;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* TERRACE SHOWCASE */
+    .showcase {
+      position: relative;
+      height: 70vh;
+      min-height: 420px;
+      background: url('images/web/large/_DSF2590.jpg') center / cover no-repeat;
+    }
+    .showcase::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(20,30,18,0.65) 0%, rgba(20,30,18,0.05) 45%, transparent 100%);
+    }
+    .showcase-caption {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      z-index: 1;
+      padding: 2.5rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .showcase-caption .eyebrow {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    .showcase-caption h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: var(--cream);
+      margin-top: 0.5rem;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* INTRO BLOCK */
+    .intro {
+      padding: 5rem 0 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    .intro-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 1.2rem;
+    }
+    .intro-text p {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: #3a3a2e;
+    }
+    .intro-quote {
+      border-left: 3px solid var(--gold);
+      padding: 1.5rem 1.5rem;
+      background: rgba(184,149,58,0.06);
+    }
+    .intro-quote blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--green);
+    }
+
+    /* INDELING */
+    .layout-section {
+      padding: 3rem 0;
+    }
+    .layout-level {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(59,92,58,0.12);
+    }
+    .layout-level:first-of-type {
+      border-top: 1px solid rgba(59,92,58,0.12);
+    }
+    .layout-level h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: var(--green);
+    }
+    .layout-level p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #3a3a2e;
+    }
+    @media (max-width: 640px) {
+      .layout-level { grid-template-columns: 1fr; gap: 0.5rem; }
+    }
+
+    /* SECTION TITLE */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .section-label span {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(59,92,58,0.2);
+    }
+
+    /* FEATURES GRID */
+    .features-section {
+      padding: 3rem 0;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5px;
+      background: rgba(59,92,58,0.12);
+    }
+    .feature-card {
+      background: var(--cream);
+      padding: 2rem;
+      transition: background 0.25s;
+    }
+    .feature-card:hover {
+      background: #ede8dc;
+    }
+    .feature-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .feature-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: var(--green);
+    }
+    .feature-desc {
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+
+    /* GALLERY */
+    .gallery-section {
+      padding: 3rem 0;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+      background: #ddd6c8;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease, filter 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.06);
+      filter: brightness(0.92);
+    }
+    .gallery-item .cap {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 0.9rem 0.8rem 0.6rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      color: #fff;
+      background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover .cap { opacity: 1; }
+
+    /* LIGHTBOX */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15,18,12,0.94);
+      padding: 2rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 92vw;
+      max-height: 82vh;
+      object-fit: contain;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .lb-cap {
+      position: absolute;
+      bottom: 1.4rem;
+      left: 0; right: 0;
+      text-align: center;
+      color: rgba(245,240,232,0.85);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+    }
+    .lb-btn {
+      position: absolute;
+      background: none;
+      border: none;
+      color: var(--cream);
+      cursor: pointer;
+      font-family: 'Jost', sans-serif;
+      user-select: none;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .lb-btn:hover { color: var(--gold-light); }
+    .lb-close { top: 1.2rem; right: 1.6rem; font-size: 2.2rem; line-height: 1; }
+    .lb-prev, .lb-next { top: 50%; transform: translateY(-50%); font-size: 3rem; padding: 0 1.2rem; }
+    .lb-prev { left: 0.5rem; }
+    .lb-next { right: 0.5rem; }
+    .lb-prev:hover, .lb-next:hover { transform: translateY(-50%) scale(1.15); }
+
+    /* PARK HIGHLIGHT */
+    .park-section {
+      padding: 4rem 0;
+    }
+    .park-banner {
+      background: var(--green);
+      padding: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .park-banner::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .park-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: 10%;
+      width: 400px; height: 200px;
+      border-radius: 50%;
+      background: rgba(184,149,58,0.08);
+    }
+    .park-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .park-banner p {
+      color: rgba(245,240,232,0.75);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      max-width: 520px;
+      position: relative;
+    }
+    .park-banner .eekhoorn {
+      position: absolute;
+      right: 3rem;
+      bottom: 2rem;
+      font-size: 4rem;
+      opacity: 0.15;
+    }
+
+    /* LOCATION */
+    .location-section {
+      padding: 3rem 0 5rem;
+    }
+    .location-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .location-item {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2rem;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid rgba(59,92,58,0.12);
+    }
+    .location-item:first-child { border-top: 1px solid rgba(59,92,58,0.12); }
+    .location-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 0.4rem;
+    }
+    .location-text {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #3a3a2e;
+    }
+    .location-text strong {
+      font-weight: 500;
+      color: var(--dark);
+    }
+
+    /* SPECS & DOWNLOADS */
+    .specs-section {
+      padding: 3rem 0;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5px;
+      background: rgba(59,92,58,0.12);
+      margin-bottom: 2.5rem;
+    }
+    .spec-card {
+      background: var(--cream);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .spec-card.spec-full { grid-column: 1 / -1; }
+    .epc-badge {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #1a1a14;
+      background: #c4d82e; /* label C */
+    }
+    .spec-check {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      color: #fff;
+      background: var(--green-light);
+    }
+    .spec-info .spec-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--green);
+      margin-bottom: 0.2rem;
+    }
+    .spec-info .spec-value {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .spec-info .spec-value strong {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: rgba(59,92,58,0.12);
+      border: 1px solid rgba(59,92,58,0.12);
+    }
+    .download-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 1.4rem;
+      background: var(--cream);
+      text-decoration: none;
+      color: var(--dark);
+      transition: background 0.2s;
+    }
+    .download-item:hover { background: #ede8dc; }
+    .download-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .download-name {
+      flex: 1;
+      font-size: 0.95rem;
+    }
+    .download-name small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+      margin-top: 0.1rem;
+    }
+    .download-action {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    /* ALGEMENE GEGEVENS */
+    .facts-section {
+      padding: 3rem 0;
+    }
+    .facts-block + .facts-block {
+      margin-top: 2.5rem;
+    }
+    .facts-subhead {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+    .fact-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .fact {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid rgba(59,92,58,0.12);
+    }
+    .fact:first-child { border-top: 1px solid rgba(59,92,58,0.12); }
+    .fact dt {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+    .fact dd {
+      font-size: 0.95rem;
+      line-height: 1.45;
+      color: var(--dark);
+      text-align: right;
+    }
+    .facts-plan-note {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    /* FOOTER CTA */
+    .cta-section {
+      background: var(--dark);
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--cream);
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+    }
+    .cta-address {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.55);
+      margin-bottom: 1.25rem;
+    }
+    .cta-pricelabel {
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+    .cta-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+    }
+    .cta-openhouse {
+      display: inline-block;
+      margin-bottom: 1.75rem;
+      padding: 1rem 1.75rem;
+      border: 1px solid rgba(184,149,58,0.5);
+      background: rgba(184,149,58,0.08);
+      border-radius: 2px;
+      max-width: 520px;
+    }
+    .cta-openhouse .oh-label {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .cta-openhouse .oh-text {
+      color: var(--cream);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .cta-openhouse .oh-text strong {
+      color: var(--gold-light);
+      font-weight: 500;
+    }
+    .cta-section p {
+      color: rgba(245,240,232,0.5);
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    .cta-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 2rem;
+    }
+    .cta-names {
+      color: var(--cream);
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 0.9rem 2.5rem;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cta-btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+    .cta-ref {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: rgba(245,240,232,0.3);
+      letter-spacing: 0.1em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 3rem 1.5rem; }
+      .hero-stats { gap: 1.5rem; }
+      .showcase-caption { padding: 2rem 1.5rem; }
+      .intro { grid-template-columns: 1fr; gap: 2rem; }
+      .features-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .park-banner { padding: 2.5rem 1.5rem; }
+      .park-banner .eekhoorn { font-size: 2.5rem; }
+      .cta-section { padding: 3rem 1.5rem; }
+      main { padding: 0 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">Woning te koop · Deurne Zuid · Antwerpen</div>
+    <h1 class="hero-title">Leven aan het<br><em>Boelaerpark</em></h1>
+    <p class="hero-sub">Thuiskomen in het groen, midden in de stad</p>
+    <p class="hero-address">Jozef Verbovenlei 109 · 2100 Deurne</p>
+
+    <div class="hero-stats">
+      <div class="stat stat-price">
+        <span class="stat-num">€ 560.000</span>
+        <span class="stat-label">Richtprijs</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="stat">
+        <span class="stat-num">2+1</span>
+        <span class="stat-label">Slaapkamers</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Terrassen</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="stat">
+        <span class="stat-num">ZW</span>
+        <span class="stat-label">Tuin oriëntatie</span>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="stat">
+        <span class="stat-num">🚗</span>
+        <span class="stat-label">Staanplaats voor de deur</span>
+      </div>
+    </div>
+
+    <div class="hero-contact">
+      <span class="hc-text">Meer info of een afspraak? Bel Shauna &amp; Wim</span>
+      <a class="hc-btn" href="tel:+32497315999">📞 0497 31 59 99</a>
+    </div>
+  </section>
+
+  <!-- TERRACE SHOWCASE -->
+  <section class="showcase">
+    <div class="showcase-caption">
+      <span class="eyebrow">Buiten leven</span>
+      <h2>Een groen terras met zicht op het park</h2>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- INTRO -->
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Ruimte, licht & karakter op een toplocatie</h2>
+        <p>
+          Deze uitzonderlijke woning in het hart van Deurne Zuid combineert ruimte, comfort en
+          authentieke charme. Binnen valt meteen het karakter op: sfeervolle, lichtrijke kamers,
+          een prachtig glas-in-loodraam en overvloedige bergruimte dankzij de vele ingemaakte kasten.
+          Buiten geniet u van twee terrassen en een zuidwest&shy;gerichte tuin, terwijl de ruime
+          garage én een eigen staanplaats voor de deur een zeldzame luxe vormen in dit gewilde stadsgedeelte.
+        </p>
+      </div>
+      <div class="intro-quote">
+        <blockquote>
+          "Vanop het terras kijk je rechtstreeks uit op het weelderige groen van het Boelaerpark,
+          en als je geluk hebt, zie je een eekhoorn voorbijschieten."
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- INDELING -->
+    <section class="layout-section">
+      <div class="section-label">
+        <span>Indeling</span>
+      </div>
+      <div class="layout-level">
+        <h3>Gelijkvloers</h3>
+        <p>Op het gelijkvloers vindt u een ruime garage en een gastentoilet, samen met een aparte ruimte die zich perfect leent als bureau of extra slaapkamer. Vanuit deze ruimte is er een doorgang naar de gezellige stadstuin: een groene oase met twee prachtige vijgenbomen.</p>
+      </div>
+      <div class="layout-level">
+        <h3>Woonverdieping</h3>
+        <p>De woonverdieping vormt het hart van het huis: een grote, lichtrijke woonkamer die uitkomt op het terras. De aansluitende keuken geeft eveneens uit op het achterliggende terras.</p>
+      </div>
+      <div class="layout-level">
+        <h3>Tweede verdieping</h3>
+        <p>Op de tweede verdieping bevinden zich twee volwaardige slaapkamers, voorzien van talrijke ingemaakte kasten, samen met een badkamer en een tweede terras.</p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section">
+      <div class="section-label">
+        <span>Kenmerken van de woning</span>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <span class="feature-icon">🛏</span>
+          <div class="feature-title">2 Volwaardige slaapkamers</div>
+          <p class="feature-desc">Twee ruime slaapkamers op de bovenverdieping met ingemaakte kasten.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">💼</span>
+          <div class="feature-title">Bureau / extra slaapkamer</div>
+          <p class="feature-desc">Een veelzijdige ruimte beneden: perfect als thuiskantoor, hobbyruimte of praktijkruimte.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🚗</span>
+          <div class="feature-title">Ruime garage</div>
+          <p class="feature-desc">Een ruime garage met autostaanplaats voor de deur.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🌿</span>
+          <div class="feature-title">Groene tuin op zuidwest</div>
+          <p class="feature-desc">Een groene tuin op zuidwest, de ideale plek om te ontspannen, te barbecueën of te genieten van de ondergaande zon.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🪴</span>
+          <div class="feature-title">Twee terrassen</div>
+          <p class="feature-desc">Geniet van de namiddag- en avondzon op uw zuidwestgerichte buitenruimte, de perfecte plek om te ontspannen.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">☀️</span>
+          <div class="feature-title">Eetplaats & living met lichtinval</div>
+          <p class="feature-desc">De aansluitende eet- en leefruimte ademt openheid: grote ramen, veel daglicht en een naadloze overgang naar het terras.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🪟</span>
+          <div class="feature-title">Karaktervol & authentiek</div>
+          <p class="feature-desc">Deze woning ademt karakter. Authentieke elementen zoals een prachtig glas-in-loodraam aan de leefruimte geven haar een tijdloze, warme uitstraling. Dit raam is een creatie van glazenier Ivo Bakelants uit Deurne.</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-icon">🗄</span>
+          <div class="feature-title">Overvloedige bergruimte</div>
+          <p class="feature-desc">Dankzij de vele ingemaakte kasten in de kamers is er aan bergruimte geen tekort. Alles heeft zijn plek, zonder in te boeten op woonoppervlak.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-label">
+        <span>Fotogalerij</span>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2801-Edit.jpg" data-full="images/web/large/_DSF2801-Edit.jpg" alt="Voorgevel van de woning"><span class="cap">Voorgevel</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2590.jpg" data-full="images/web/large/_DSF2590.jpg" alt="Groen terras met overkapping"><span class="cap">Groen terras</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2629-Edit.jpg" data-full="images/web/large/_DSF2629-Edit.jpg" alt="Achtergevel gezien vanuit de tuin"><span class="cap">Achtergevel & tuin</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2705.jpg" data-full="images/web/large/_DSF2705.jpg" alt="Lichtrijke leefruimte met zithoek"><span class="cap">Leefruimte</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2723.jpg" data-full="images/web/large/_DSF2723.jpg" alt="Ruime eetplaats"><span class="cap">Eetplaats</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2673.jpg" data-full="images/web/large/_DSF2673.jpg" alt="Keuken met zicht op het terras"><span class="cap">Keuken</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2666.jpg" data-full="images/web/large/_DSF2666.jpg" alt="Keuken"><span class="cap">Keuken</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2565.jpg" data-full="images/web/large/_DSF2565.jpg" alt="Ouderslaapkamer"><span class="cap">Slaapkamer</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2573.jpg" data-full="images/web/large/_DSF2573.jpg" alt="Slaapkamer met ingemaakte kasten"><span class="cap">Slaapkamer</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2536.jpg" data-full="images/web/large/_DSF2536.jpg" alt="Kinderkamer"><span class="cap">Kinderkamer</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2538.jpg" data-full="images/web/large/_DSF2538.jpg" alt="Kinderkamer met kasten"><span class="cap">Kinderkamer</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2512.jpg" data-full="images/web/large/_DSF2512.jpg" alt="Bureau / extra kamer"><span class="cap">Bureau</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2555.jpg" data-full="images/web/large/_DSF2555.jpg" alt="Badkamer"><span class="cap">Badkamer</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2489.jpg" data-full="images/web/large/_DSF2489.jpg" alt="Inkomhal"><span class="cap">Inkomhal</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2490.jpg" data-full="images/web/large/_DSF2490.jpg" alt="Inkomhal met trap"><span class="cap">Inkomhal & trap</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2832-Edit.jpg" data-full="images/web/large/_DSF2832-Edit.jpg" alt="Trap met authentiek glas-in-loodraam"><span class="cap">Glas-in-lood</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2579.jpg" data-full="images/web/large/_DSF2579.jpg" alt="Zonneterras boven"><span class="cap">Zonneterras</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2616-Edit.jpg" data-full="images/web/large/_DSF2616-Edit.jpg" alt="Groene tuin"><span class="cap">Tuin</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2626-Edit.jpg" data-full="images/web/large/_DSF2626-Edit.jpg" alt="Groene tuin met trap"><span class="cap">Tuin</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2641.jpg" data-full="images/web/large/_DSF2641.jpg" alt="Vijgenboom in de tuin"><span class="cap">Vijgenboom</span></div>
+        <div class="gallery-item"><img loading="lazy" src="images/web/thumb/_DSF2776.jpg" data-full="images/web/large/_DSF2776.jpg" alt="Ruime garage met bergruimte"><span class="cap">Garage</span></div>
+      </div>
+    </section>
+
+    <!-- PARK HIGHLIGHT -->
+    <section class="park-section">
+      <div class="section-label">
+        <span>Het groene kader</span>
+      </div>
+      <div class="park-banner">
+        <h2>Achtertuin met zicht op het Boelaerpark</h2>
+        <p>
+          Vanop het terras kijkt u
+          uit op het weelderige groen, hoort u de vogels fluiten en ziet u eekhoorns ravotten tussen
+          de bomen. Het Boelaerpark is een dagelijkse oase van rust, groen en frisheid, met een
+          speeltuin voor de kinderen, letterlijk om de hoek van uw voordeur.
+        </p>
+        <div class="eekhoorn">🐿</div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location-section">
+      <div class="section-label">
+        <span>Buurt &amp; omgeving</span>
+      </div>
+      <div class="location-items">
+        <div class="location-item">
+          <div class="location-dot"></div>
+          <div class="location-text"><strong>Boelaerpark</strong> met speeltuin, rechtstreeks parkzicht vanop het terras, ideaal voor een ochtendwandeling, picknick of speelmiddag met de kinderen</div>
+        </div>
+        <div class="location-item">
+          <div class="location-dot"></div>
+          <div class="location-text"><strong>Boekenberg Park met zwemvijver</strong>, een verfrissende duik of ontspannen namiddag, letterlijk om de hoek</div>
+        </div>
+        <div class="location-item">
+          <div class="location-dot"></div>
+          <div class="location-text"><strong>Winkels en horeca op wandelafstand</strong>, uitgebreid aanbod aan supermarkten, bakkers, cafés en restaurants</div>
+        </div>
+        <div class="location-item">
+          <div class="location-dot"></div>
+          <div class="location-text"><strong>Berchem Station</strong> op korte afstand, met vlotte trein-, bus- en metroverbindingen naar het centrum en verder</div>
+        </div>
+        <div class="location-item">
+          <div class="location-dot"></div>
+          <div class="location-text"><strong>Op- en afrit Borgerhout</strong> in de buurt, voor een vlotte verbinding met de ring</div>
+        </div>
+        <div class="location-item">
+          <div class="location-dot"></div>
+          <div class="location-text"><strong>Deurne Zuid</strong>, een van de meest geliefde, levendige en groene wijken van Antwerpen</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS & DOWNLOADS -->
+    <section class="specs-section">
+      <div class="section-label">
+        <span>Technische gegevens &amp; documenten</span>
+      </div>
+
+      <div class="specs-grid">
+        <div class="spec-card">
+          <div class="epc-badge">C</div>
+          <div class="spec-info">
+            <div class="spec-title">Energieprestatie (EPC)</div>
+            <div class="spec-value"><strong>217 kWh/m²·jaar</strong> — energielabel C</div>
+          </div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-check">✓</div>
+          <div class="spec-info">
+            <div class="spec-title">Elektrische installatie</div>
+            <div class="spec-value"><strong>Conform</strong> — geldig keuringsverslag aanwezig</div>
+          </div>
+        </div>
+        <div class="spec-card spec-full">
+          <div class="spec-check">✓</div>
+          <div class="spec-info">
+            <div class="spec-title">Asbestveilig</div>
+            <div class="spec-value"><strong>De woning is asbestveilig</strong> — attest binnenkort beschikbaar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="downloads">
+        <a class="download-item" href="documenten/Certificaat-20260525-0003876774-RES-1.pdf" target="_blank" rel="noopener" download>
+          <span class="download-icon">📄</span>
+          <span class="download-name">Energieprestatiecertificaat (EPC)<small>PDF · energielabel C</small></span>
+          <span class="download-action">Download ↓</span>
+        </a>
+        <a class="download-item" href="documenten/GEN_15_30820362_00_N_ORIG_000.PDF" target="_blank" rel="noopener" download>
+          <span class="download-icon">📄</span>
+          <span class="download-name">Keuringsverslag elektrische installatie<small>PDF · resultaat conform</small></span>
+          <span class="download-action">Download ↓</span>
+        </a>
+        <a class="download-item" href="documenten/bouwplan.jpg" target="_blank" rel="noopener" download>
+          <span class="download-icon">📐</span>
+          <span class="download-name">Bouwplan<small>Afbeelding · grondplan van de woning</small></span>
+          <span class="download-action">Download ↓</span>
+        </a>
+        <a class="download-item" href="documenten/Stedenbouwkundig%20uittreksel%2020-05-2026.pdf" target="_blank" rel="noopener" download>
+          <span class="download-icon">📄</span>
+          <span class="download-name">Stedenbouwkundig uittreksel<small>PDF · 20-05-2026</small></span>
+          <span class="download-action">Download ↓</span>
+        </a>
+        <a class="download-item" href="documenten/OVAM_Bodemattest%2020-05-2026.pdf" target="_blank" rel="noopener" download>
+          <span class="download-icon">📄</span>
+          <span class="download-name">Bodemattest (OVAM)<small>PDF · 20-05-2026</small></span>
+          <span class="download-action">Download ↓</span>
+        </a>
+        <a class="download-item" href="documenten/Bodformulier.docx" target="_blank" rel="noopener" download>
+          <span class="download-icon">📝</span>
+          <span class="download-name">Bodformulier<small>Word-document · om een bod uit te brengen</small></span>
+          <span class="download-action">Download ↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ALGEMENE GEGEVENS -->
+    <section class="facts-section">
+      <div class="section-label">
+        <span>Algemene gegevens</span>
+      </div>
+
+      <div class="facts-block">
+        <dl class="fact-list">
+          <div class="fact"><dt>Adres</dt><dd>Jozef Verbovenlei nr. 109, 2100 Deurne</dd></div>
+          <div class="fact"><dt>Bouwheer</dt><dd>Florent De Jonghe, Scheldestraat 84, Antwerpen</dd></div>
+          <div class="fact"><dt>Architect</dt><dd>Ferd. Van Beirs, G. Gezellelaan 81, Mortsel</dd></div>
+          <div class="fact"><dt>Bouwjaar</dt><dd>1950</dd></div>
+          <div class="fact"><dt>Bewoonbare oppervlakte</dt><dd>circa 130 m²</dd></div>
+          <div class="fact"><dt>Bebouwde oppervlakte</dt><dd>66 m²</dd></div>
+          <div class="fact"><dt>Terrein</dt><dd>150 m²</dd></div>
+          <div class="fact"><dt>Kadastraal inkomen (K.I.)</dt><dd>€ 1.046</dd></div>
+        </dl>
+      </div>
+
+      <div class="facts-block">
+        <div class="facts-subhead">Afmetingen per ruimte</div>
+        <p class="facts-plan-note">Zie ook het bouwplan bij de documenten hierboven.</p>
+        <dl class="fact-list">
+          <div class="fact"><dt>Slaapkamer 1</dt><dd>ongeveer 17 m²</dd></div>
+          <div class="fact"><dt>Slaapkamer 2</dt><dd>ongeveer 17 m²</dd></div>
+          <div class="fact"><dt>Bureauruimte</dt><dd>ongeveer 10 m²</dd></div>
+          <div class="fact"><dt>Garage (gelijkvloers)</dt><dd>ongeveer 25 m²</dd></div>
+          <div class="fact"><dt>Tuin</dt><dd>54 m²</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Interesse? Maak een afspraak</h2>
+    <div class="cta-address">Jozef Verbovenlei 109 · 2100 Deurne</div>
+    <div class="cta-pricelabel">Richtprijs</div>
+    <div class="cta-price">€ 560.000</div>
+    <div class="cta-openhouse">
+      <span class="oh-label">🗓 Kijkdagen eerste week van juni</span>
+      <span class="oh-text">We organiseren kijkdagen voor deze woning.<br>Neem <strong>telefonisch contact</strong> op om een afspraak in te plannen.</span>
+    </div>
+    <p>We tonen u graag alles wat de woning te bieden heeft.</p>
+    <div class="cta-contact">
+      <span class="cta-names">Shauna De Leener &amp; Wim Casteels</span>
+    </div>
+    <a class="cta-btn" href="tel:+32497315999">Bel 0497 31 59 99</a>
+    <p class="cta-ref">Ref. BDP-2026 · Deurne Zuid · Boelaerpark</p>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn lb-close" aria-label="Sluiten">&times;</button>
+    <button class="lb-btn lb-prev" aria-label="Vorige">&#8249;</button>
+    <img src="" alt="">
+    <button class="lb-btn lb-next" aria-label="Volgende">&#8250;</button>
+    <div class="lb-cap"></div>
+  </div>
+
+  <script>
+    (function () {
+      var imgs = Array.prototype.slice.call(document.querySelectorAll('.gallery-item img'));
+      var lb = document.getElementById('lightbox');
+      var lbImg = lb.querySelector('img');
+      var lbCap = lb.querySelector('.lb-cap');
+      var idx = 0;
+
+      function open(i) {
+        idx = (i + imgs.length) % imgs.length;
+        var el = imgs[idx];
+        lbImg.src = el.getAttribute('data-full');
+        lbImg.alt = el.alt;
+        lbCap.textContent = el.alt;
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        lb.classList.remove('open');
+        lbImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      imgs.forEach(function (el, i) {
+        el.addEventListener('click', function () { open(i); });
+      });
+      lb.querySelector('.lb-close').addEventListener('click', close);
+      lb.querySelector('.lb-prev').addEventListener('click', function (e) { e.stopPropagation(); open(idx - 1); });
+      lb.querySelector('.lb-next').addEventListener('click', function (e) { e.stopPropagation(); open(idx + 1); });
+      lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowLeft') open(idx - 1);
+        else if (e.key === 'ArrowRight') open(idx + 1);
+      });
+    })();
+  </script>
+
+</body>
+</html>
